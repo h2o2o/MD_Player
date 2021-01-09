@@ -107,10 +107,7 @@ class MDPlayer:
 
     # 上传图片，返回链接
     def upload_img(self, img_path):
-        secret_id = config.Secret_Id
-        secret_key = config.Secret_Key
-        region = config.Region
-        client = CosS3Client(CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key))
+        client = CosS3Client(CosConfig(Region=config.Region, SecretId=config.Secret_Id, SecretKey=config.Secret_Key))
         with open(img_path, 'rb') as fp:
             client.put_object(
                 Bucket='picture-bed-1259591647',
