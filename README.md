@@ -33,12 +33,30 @@
 
 1. 安装Python
 2. 安装opencv-python，pypinyin，腾讯云os cdk，这一步可以使用下面的代码，一步安装。
-3. 创建腾讯云oss存储桶
 
 ```bssh
 pip install -r requirements.txt
 ```
 
+3. 创建腾讯云oss存储桶
 3. 修改配置文件
 4. 运行md_player.py文件
 
+## 自定义修改
+
+### 1. 图片上传方式
+
+默认的方式是使用的腾讯云oss的sdk进行文件上传，如果需要使用其他的方式，可以自己修改md_player.py中的 upload_img 函数，在其中自定是上传的方式。 return最终返回一个图片的真实链接就可以了
+
+```Python
+# 这里 img_url 返回的是图片上传之后的引用地址
+return img_url
+```
+
+### 2. 其他配置
+
+其他自定义配置修改config.py中的文件即可
+
+### 3. Transfrom_md.py
+
+这个文件是记录转换过的文件的记录，后面的转换可以不重复去转换已经转换过的，如果之前转换过的md文档需要更新，可以直接选择全部转换。
