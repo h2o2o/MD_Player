@@ -121,7 +121,7 @@ class MDPlayer:
             )
 
         #  将上传文件的链接添加到列表中， 方便后续查找替换
-        img_url = 'https://picture-bed-1259591647.cos.ap-chengdu.myqcloud.com/' + "Hexo_Images/" + \
+        img_url = config.Upload_Img_Url + "Hexo_Images/" + \
                   strftime('%Y-%m-%d', localtime(time())) + "/" + img_path.split(self.split_str)[-1]
         # 返回上传后的图片地址
         return img_url

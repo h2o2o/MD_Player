@@ -10,6 +10,9 @@ IMG_SIZE = 512000
 # 压缩图片保存路径
 COMPRESS_IMG_SAVE_PATH = 'E:\\Blog\\Local_MD\\_resources\\compression\\'
 
+# 图片上传后的图片链接地址
+Upload_Img_Url = 'https://picture-bed-1259591647.cos.ap-chengdu.myqcloud.com/'
+
 # 转换后的MD文档保存位置
 RESULT_MD_PATH = 'E:\\Blog\\Result_MD\\'
 
@@ -22,7 +25,7 @@ MD_Delete = False
 # 平台[Android, Windows]，因为路径格式不一致
 Platform = 'Windows'
 
-#  是否添加Hexo信息头部
+# 是否添加Hexo信息头部
 Add_Hexo = True
 
 # Hexo头部信息

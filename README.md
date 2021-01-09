@@ -33,10 +33,10 @@
 
 1. 安装Python
 2. 安装opencv-python，pypinyin，腾讯云os cdk，这一步可以使用下面的代码，一步安装。
+3. 创建腾讯云oss存储桶
 
 ```bssh
 pip install -r requirements.txt
-
 ```
 
 3. 修改配置文件
